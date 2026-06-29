@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casos de éxito — Grupo Fischer</title>
+<meta name="description" content="Testimonios de conductores de Uber y DiDi que trabajan con la flotilla de Grupo Fischer en CDMX.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">GRUPO <span>FISCHER</span><small>FLOTILLA CDMX</small></a>
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="casos-exito.html" aria-current="page">Casos de éxito</a>
+      <a href="taller.html">Taller</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn-wsp-mini" href="https://wa.me/5210000000000" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:50px;">
+  <div class="wrap">
+    <div class="folio">EXPEDIENTES DE CONDUCTORES</div>
+    <h1 style="font-size:clamp(34px,4.6vw,52px);">Historias reales de quienes ya manejan con nosotros.</h1>
+    <p class="lead" style="margin-top:18px;">Cada conductor que trabaja con Grupo Fischer tiene una historia distinta. Aquí compartimos algunas, y te invitamos a contarnos la tuya.</p>
+  </div>
+</section>
+
+<section class="con-borde">
+  <div class="wrap">
+    <div class="grid-expedientes">
+
+      <div class="expediente">
+        <div class="foto">FOTO DEL CONDUCTOR<br>(próximamente)</div>
+        <div class="datos">
+          <div class="ficha-top">
+            <span class="nombre">Nombre del conductor</span>
+            <span class="meta">Uber · CDMX</span>
+          </div>
+          <blockquote>"Este espacio está listo para tu primer testimonio real. Mándanos tu historia desde el formulario de abajo."</blockquote>
+          <div class="km">
+            <div><strong>—</strong>Tiempo con la flotilla</div>
+            <div><strong>—</strong>Vehículo asignado</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expediente">
+        <div class="foto">FOTO DEL CONDUCTOR<br>(próximamente)</div>
+        <div class="datos">
+          <div class="ficha-top">
+            <span class="nombre">Nombre del conductor</span>
+            <span class="meta">DiDi · CDMX</span>
+          </div>
+          <blockquote>"Aquí va a aparecer otro testimonio real apenas lo recibamos."</blockquote>
+          <div class="km">
+            <div><strong>—</strong>Tiempo con la flotilla</div>
+            <div><strong>—</strong>Vehículo asignado</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expediente">
+        <div class="foto">FOTO DEL CONDUCTOR<br>(próximamente)</div>
+        <div class="datos">
+          <div class="ficha-top">
+            <span class="nombre">Nombre del conductor</span>
+            <span class="meta">Uber · CDMX</span>
+          </div>
+          <blockquote>"Tercer espacio disponible para un testimonio real de la flotilla."</blockquote>
+          <div class="km">
+            <div><strong>—</strong>Tiempo con la flotilla</div>
+            <div><strong>—</strong>Vehículo asignado</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="caja-video">
+      <div>
+        <h3>Próximamente: video-testimonios</h3>
+        <p>Estamos preparando este espacio para mostrar videos de conductores contando su experiencia con Grupo Fischer. Por ahora, comparte tu historia en texto o foto desde el formulario.</p>
+      </div>
+      <a class="btn btn-fantasma" href="#enviar-testimonio">Compartir mi historia</a>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="enviar-testimonio">
+  <div class="wrap dos-col">
+    <div>
+      <div class="folio">PARA CONDUCTORES</div>
+      <h2 style="font-size:30px;">¿Manejas con nosotros? Cuéntanos tu caso.</h2>
+      <p style="color:var(--hueso-op); margin-top:14px; max-width:46ch;">
+        Llena este formulario con tu testimonio. Si tienes fotos o un video grabado, dile a tu asesor de Grupo Fischer
+        que te indique cómo enviarlo, o mándalo directo por WhatsApp adjuntando el archivo.
+      </p>
+      <ul class="lista-check" style="margin-top:28px;">
+        <li>Tu testimonio puede aparecer en esta página (con tu autorización).</li>
+        <li>Puedes enviar texto, fotos o, próximamente, video.</li>
+        <li>Revisamos cada historia antes de publicarla.</li>
+      </ul>
+    </div>
+
+    <form class="form-contacto" action="https://formsubmit.co/contacto@grupofischer.mx" method="POST">
+      <input type="hidden" name="_subject" value="Nuevo testimonio — Casos de éxito">
+
+      <div class="campo">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="campo">
+        <label for="plataforma">Plataforma en la que trabajas</label>
+        <select id="plataforma" name="plataforma">
+          <option value="Uber">Uber</option>
+          <option value="DiDi">DiDi</option>
+          <option value="Ambas">Ambas</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="tiempo">¿Cuánto tiempo llevas con Grupo Fischer?</label>
+        <input type="text" id="tiempo" name="tiempo_con_flotilla" placeholder="Ej. 8 meses">
+      </div>
+
+      <div class="campo">
+        <label for="telefono">Teléfono / WhatsApp</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+
+      <div class="campo">
+        <label for="testimonio">Tu testimonio</label>
+        <textarea id="testimonio" name="testimonio" placeholder="Cuéntanos cómo ha sido tu experiencia trabajando con la flotilla de Grupo Fischer..." required></textarea>
+      </div>
+
+      <div class="campo">
+        <label for="autorizo">Autorización</label>
+        <select id="autorizo" name="autorizacion_publicar">
+          <option value="Sí, autorizo publicar mi testimonio">Sí, autorizo publicar mi testimonio</option>
+          <option value="No, es solo para uso interno">No, es solo para uso interno</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primario" style="justify-content:center;">Enviar mi testimonio</button>
+    </form>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="wrap">
+    <h2>¿Aún no manejas con nosotros?</h2>
+    <p>Conoce las condiciones de renta y súmate a la flotilla.</p>
+    <a class="btn btn-primario" href="contacto.html">Quiero rentar un auto</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Grupo Fischer</h4>
+        <p>Renta de flotilla para conductores de plataformas digitales en Ciudad de México.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <a href="servicios.html">Servicios</a>
+        <a href="casos-exito.html">Casos de éxito</a>
+        <a href="taller.html">Taller mecánico</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="https://wa.me/5210000000000" target="_blank" rel="noopener">WhatsApp: (55) 0000 0000</a>
+        <a href="mailto:contacto@grupofischer.mx">contacto@grupofischer.mx</a>
+        <p>Ciudad de México</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Grupo Fischer</span>
+      <span>Flotilla CDMX</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wsp-flotante" href="https://wa.me/5210000000000" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">🟢</a>
+
+</body>
+</html>

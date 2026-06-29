@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Grupo Fischer</title>
+<meta name="description" content="Contacta a Grupo Fischer para rentar un vehículo y trabajar con Uber o DiDi en Ciudad de México.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">GRUPO <span>FISCHER</span><small>FLOTILLA CDMX</small></a>
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="casos-exito.html">Casos de éxito</a>
+      <a href="taller.html">Taller</a>
+      <a href="contacto.html" aria-current="page">Contacto</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn-wsp-mini" href="https://wa.me/5210000000000" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:50px;">
+  <div class="wrap">
+    <div class="folio">CONTACTO GF</div>
+    <h1 style="font-size:clamp(34px,4.6vw,52px);">Hablemos sobre tu flotilla.</h1>
+    <p class="lead" style="margin-top:18px;">Ya sea que quieras rentar un auto, conocer el taller o resolver una duda, este es el lugar para empezar.</p>
+  </div>
+</section>
+
+<section class="con-borde">
+  <div class="wrap dos-col">
+
+    <form class="form-contacto" action="https://formsubmit.co/contacto@grupofischer.mx" method="POST">
+      <input type="hidden" name="_subject" value="Nuevo contacto desde la web — Grupo Fischer">
+
+      <div class="campo">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="campo">
+        <label for="telefono">Teléfono / WhatsApp</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+
+      <div class="campo">
+        <label for="motivo">Motivo de contacto</label>
+        <select id="motivo" name="motivo">
+          <option value="Quiero rentar un vehículo">Quiero rentar un vehículo</option>
+          <option value="Soy conductor de la flotilla">Soy conductor de la flotilla</option>
+          <option value="Tema de taller / mantenimiento">Tema de taller / mantenimiento</option>
+          <option value="Otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente qué necesitas..." required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primario" style="justify-content:center;">Enviar mensaje</button>
+    </form>
+
+    <div>
+      <div class="folio">OTRAS FORMAS DE CONTACTO</div>
+      <h2 style="font-size:26px; margin-bottom:22px;">Elige lo que te quede más cómodo.</h2>
+      <ul class="lista-check">
+        <li>WhatsApp: respuesta más rápida para temas urgentes de flotilla.</li>
+        <li>Correo: para documentación o seguimientos formales.</li>
+        <li>Si ya eres conductor, escríbele directo a tu asesor asignado.</li>
+      </ul>
+
+      <div class="mini-mapa" style="margin-top:30px;">
+        <strong>WhatsApp</strong>
+        <a href="https://wa.me/5210000000000" target="_blank" rel="noopener">(55) 0000 0000</a>
+        <br>
+        <strong>Correo</strong>
+        <a href="mailto:contacto@grupofischer.mx">contacto@grupofischer.mx</a>
+        <br>
+        <strong>Zona de operación</strong>
+        Ciudad de México y zona metropolitana.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Grupo Fischer</h4>
+        <p>Renta de flotilla para conductores de plataformas digitales en Ciudad de México.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <a href="servicios.html">Servicios</a>
+        <a href="casos-exito.html">Casos de éxito</a>
+        <a href="taller.html">Taller mecánico</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="https://wa.me/5210000000000" target="_blank" rel="noopener">WhatsApp: (55) 0000 0000</a>
+        <a href="mailto:contacto@grupofischer.mx">contacto@grupofischer.mx</a>
+        <p>Ciudad de México</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Grupo Fischer</span>
+      <span>Flotilla CDMX</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wsp-flotante" href="https://wa.me/5210000000000" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">🟢</a>
+
+</body>
+</html>
