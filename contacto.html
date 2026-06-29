@@ -1,127 +1,299 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es-MX" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contacto — Grupo Fischer</title>
-<meta name="description" content="Contacta a Grupo Fischer para rentar un vehículo y trabajar con Uber o DiDi en Ciudad de México.">
+<title>Contacto — Grupo Fischer · Flotilla para Uber y DiDi en CDMX</title>
+<meta name="description" content="Contáctanos por WhatsApp, teléfono o formulario. Grupo Fischer: renta de vehículos para conductores de Uber y DiDi en Ciudad de México.">
+<meta property="og:title"       content="Contacto — Grupo Fischer">
+<meta property="og:description" content="Habla con nosotros hoy mismo. WhatsApp, teléfono, correo o formulario para rentar un auto con Grupo Fischer en CDMX.">
+<meta property="og:type"        content="website">
+<meta property="og:locale"      content="es_MX">
+<meta property="og:url"         content="https://TU-DOMINIO.com/contacto.html">
+<meta property="og:image"       content="https://TU-DOMINIO.com/assets/img/hero/flotilla-grupo-fischer.webp">
+<link rel="canonical"           href="https://TU-DOMINIO.com/contacto.html">
+<link rel="icon" href="assets/img/logo/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<script>
+  (function(){var t=localStorage.getItem('gf-tema');if(t)document.documentElement.setAttribute('data-theme',t);else if(window.matchMedia('(prefers-color-scheme: light)').matches)document.documentElement.setAttribute('data-theme','light');}());
+</script>
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
+<!-- =============================================
+     DATOS DE CONTACTO — editar aquí si cambian
+     Tel:      55 3081 6185  |  tel:+525530816185
+     WhatsApp: https://wa.me/525530816185
+               (alternativa: https://wa.me/5215530816185)
+     Correo:   grupo.fischer19@gmail.com
+     Maps:     https://maps.app.goo.gl/NrhEzaXPWLWb828k8
+     ============================================= -->
+
+<a class="skip-link" href="#main">Ir al contenido principal</a>
+
 <header class="site-header">
   <div class="wrap">
-    <a href="index.html" class="logo">GRUPO <span>FISCHER</span><small>FLOTILLA CDMX</small></a>
-    <nav class="main-nav">
+    <a href="index.html" class="logo" aria-label="Grupo Fischer — inicio">
+      GRUPO <span>FISCHER</span><small>FLOTILLA CDMX</small>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
       <a href="index.html">Inicio</a>
       <a href="servicios.html">Servicios</a>
       <a href="casos-exito.html">Casos de éxito</a>
       <a href="taller.html">Taller</a>
       <a href="contacto.html" aria-current="page">Contacto</a>
     </nav>
-    <div class="nav-cta">
-      <a class="btn-wsp-mini" href="https://wa.me/5210000000000" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+    <div class="header-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar a tema claro" title="Cambiar a tema claro">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a class="btn-wsp-mini" href="https://wa.me/525530816185" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </header>
 
-<section class="hero" style="padding-bottom:50px;">
-  <div class="wrap">
-    <div class="folio">CONTACTO GF</div>
-    <h1 style="font-size:clamp(34px,4.6vw,52px);">Hablemos sobre tu flotilla.</h1>
-    <p class="lead" style="margin-top:18px;">Ya sea que quieras rentar un auto, conocer el taller o resolver una duda, este es el lugar para empezar.</p>
-  </div>
-</section>
+<main id="main">
 
-<section class="con-borde">
-  <div class="wrap dos-col">
+  <section class="hero-inner con-borde">
+    <div class="wrap">
+      <div class="folio">CONTACTO GF</div>
+      <h1>Hablemos sobre tu flotilla.</h1>
+      <p class="lead">Ya sea que quieras rentar un auto, conocer el taller o resolver una duda, este es el lugar para empezar. Respondemos el mismo día.</p>
+    </div>
+  </section>
 
-    <form class="form-contacto" action="https://formsubmit.co/contacto@grupofischer.mx" method="POST">
-      <input type="hidden" name="_subject" value="Nuevo contacto desde la web — Grupo Fischer">
-
-      <div class="campo">
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" required>
+  <!-- TARJETAS DE CONTACTO RÁPIDO -->
+  <section class="seccion con-borde">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="folio">CONTACTO DIRECTO</div>
+        <h2>Elige la forma que te quede más cómoda.</h2>
       </div>
 
-      <div class="campo">
-        <label for="telefono">Teléfono / WhatsApp</label>
-        <input type="tel" id="telefono" name="telefono" required>
+      <div class="contact-cards">
+        <a class="contact-card contact-card--wsp" href="https://wa.me/525530816185" target="_blank" rel="noopener noreferrer">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <div class="contact-card-info">
+            <strong>Enviar WhatsApp</strong>
+            <span>Respuesta más rápida — 55 3081 6185</span>
+          </div>
+        </a>
+
+        <a class="contact-card" href="tel:+525530816185">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12 19.79 19.79 0 0 1 1.95 3.35 2 2 0 0 1 3.92 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact-card-info">
+            <strong>Llamar a oficina</strong>
+            <span>55 3081 6185</span>
+          </div>
+        </a>
+
+        <a class="contact-card" href="mailto:grupo.fischer19@gmail.com">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="contact-card-info">
+            <strong>Enviar correo</strong>
+            <span>grupo.fischer19@gmail.com</span>
+          </div>
+        </a>
+
+        <a class="contact-card" href="https://maps.app.goo.gl/NrhEzaXPWLWb828k8" target="_blank" rel="noopener noreferrer">
+          <div class="contact-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-card-info">
+            <strong>Ver ubicación</strong>
+            <span>Abrir en Google Maps</span>
+          </div>
+        </a>
       </div>
 
-      <div class="campo">
-        <label for="motivo">Motivo de contacto</label>
-        <select id="motivo" name="motivo">
-          <option value="Quiero rentar un vehículo">Quiero rentar un vehículo</option>
-          <option value="Soy conductor de la flotilla">Soy conductor de la flotilla</option>
-          <option value="Tema de taller / mantenimiento">Tema de taller / mantenimiento</option>
-          <option value="Otro">Otro</option>
-        </select>
-      </div>
+      <!-- FORMULARIO + INFO -->
+      <div class="dos-col" style="margin-top:0;">
 
-      <div class="campo">
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente qué necesitas..." required></textarea>
-      </div>
+        <!-- =============================================
+             FORMULARIO — FormSubmit.co
+             IMPORTANTE para activar:
+             1. Envía el formulario por primera vez desde el sitio.
+             2. Revisa la bandeja de grupo.fischer19@gmail.com.
+             3. Haz clic en "Confirm your email" en el correo de FormSubmit.
+             4. A partir de ese momento todos los mensajes llegarán automáticamente.
 
-      <button type="submit" class="btn btn-primario" style="justify-content:center;">Enviar mensaje</button>
-    </form>
+             Si el correo de confirmación no llega, revisa Spam/Promociones.
 
-    <div>
-      <div class="folio">OTRAS FORMAS DE CONTACTO</div>
-      <h2 style="font-size:26px; margin-bottom:22px;">Elige lo que te quede más cómodo.</h2>
-      <ul class="lista-check">
-        <li>WhatsApp: respuesta más rápida para temas urgentes de flotilla.</li>
-        <li>Correo: para documentación o seguimientos formales.</li>
-        <li>Si ya eres conductor, escríbele directo a tu asesor asignado.</li>
-      </ul>
+             Alternativa al link de WhatsApp si no abre correctamente:
+             Cambia https://wa.me/525530816185 por https://wa.me/5215530816185
+             ============================================= -->
+        <form class="form-contacto"
+              action="https://formsubmit.co/grupo.fischer19@gmail.com"
+              method="POST"
+              novalidate>
+          <input type="hidden" name="_subject"  value="Nuevo contacto desde la web — Grupo Fischer">
+          <input type="hidden" name="_captcha"  value="false">
+          <input type="text"   name="_honey"   style="display:none" tabindex="-1" autocomplete="off">
 
-      <div class="mini-mapa" style="margin-top:30px;">
-        <strong>WhatsApp</strong>
-        <a href="https://wa.me/5210000000000" target="_blank" rel="noopener">(55) 0000 0000</a>
-        <br>
-        <strong>Correo</strong>
-        <a href="mailto:contacto@grupofischer.mx">contacto@grupofischer.mx</a>
-        <br>
-        <strong>Zona de operación</strong>
-        Ciudad de México y zona metropolitana.
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required placeholder="Tu nombre">
+          </div>
+
+          <div class="campo">
+            <label for="telefono">Teléfono / WhatsApp</label>
+            <input type="tel" id="telefono" name="telefono" autocomplete="tel" required placeholder="55 XXXX XXXX">
+          </div>
+
+          <div class="campo">
+            <label for="motivo">Motivo de contacto</label>
+            <select id="motivo" name="motivo">
+              <option value="">Selecciona una opción</option>
+              <option value="Quiero rentar un vehículo">Quiero rentar un vehículo</option>
+              <option value="Soy conductor de la flotilla">Soy conductor de la flotilla</option>
+              <option value="Tema de taller / mantenimiento">Tema de taller / mantenimiento</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente qué necesitas..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primario" style="justify-content:center; width:100%;">Enviar mensaje</button>
+          <p class="formsubmit-nota">
+            Este formulario usa FormSubmit.co para enviarte los mensajes a tu correo.
+            La primera vez que alguien lo envíe recibirás un correo de activación — debes hacer clic en "Confirm your email" para empezar a recibir mensajes.
+          </p>
+        </form>
+
+        <div>
+          <div class="folio">OTRAS FORMAS</div>
+          <h2 style="font-size:clamp(20px,2.8vw,26px); margin-bottom:20px;">Contáctanos directo si lo prefieres.</h2>
+          <ul class="lista-check" style="margin-bottom:28px;">
+            <li>WhatsApp es la vía más rápida para temas urgentes de flotilla.</li>
+            <li>Para documentación o seguimientos formales, usa el correo.</li>
+            <li>Si ya eres conductor, escríbele directo a tu asesor asignado.</li>
+            <li>Respondemos el mismo día en horario de operación.</li>
+          </ul>
+
+          <div class="info-box">
+            <strong>Teléfono de oficina</strong>
+            <p><a href="tel:+525530816185" style="color:var(--acento);">55 3081 6185</a></p>
+          </div>
+          <div class="info-box">
+            <strong>WhatsApp</strong>
+            <p><a href="https://wa.me/525530816185" target="_blank" rel="noopener noreferrer" style="color:var(--acento);">Escribir ahora</a>
+            <br>Si no abre, prueba con <a href="https://wa.me/5215530816185" target="_blank" rel="noopener noreferrer" style="color:var(--t2);">este enlace alternativo</a>.</p>
+          </div>
+          <div class="info-box">
+            <strong>Correo electrónico</strong>
+            <p><a href="mailto:grupo.fischer19@gmail.com" style="color:var(--acento);">grupo.fischer19@gmail.com</a></p>
+          </div>
+          <div class="info-box">
+            <strong>Zona de operación</strong>
+            <p>Ciudad de México y zona metropolitana.</p>
+          </div>
+        </div>
+
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- UBICACIÓN / MAPA -->
+  <section class="seccion alt con-borde">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="folio">UBICACIÓN</div>
+        <h2>Encuéntranos en Ciudad de México.</h2>
+        <p>Operamos en CDMX y zona metropolitana. Usa Google Maps para encontrar nuestro taller y oficina.</p>
+      </div>
+
+      <a class="btn btn-primario" href="https://maps.app.goo.gl/NrhEzaXPWLWb828k8" target="_blank" rel="noopener noreferrer" style="margin-bottom:24px; display:inline-flex;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Abrir en Google Maps
+      </a>
+
+      <div class="mapa-wrap">
+        <!-- =============================================
+             TODO: IFRAME EMBED DE GOOGLE MAPS
+             El enlace corto https://maps.app.goo.gl/NrhEzaXPWLWb828k8
+             sirve para abrir Maps pero NO funciona como src del iframe.
+
+             Para obtener el iframe real:
+             1. Ve a https://maps.google.com en tu computadora.
+             2. Busca la dirección o ubica el pin de tu negocio.
+             3. Haz clic en "Compartir" (el ícono de compartir).
+             4. Selecciona la pestaña "Insertar un mapa".
+             5. Copia el código <iframe ...> que aparece.
+             6. Reemplaza el div.mapa-placeholder de abajo con ese iframe.
+             7. Ajusta el height del iframe a 380 si es necesario.
+
+             Ejemplo de cómo quedará:
+             <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!..."
+               width="100%" height="380" style="border:0;" allowfullscreen=""
+               loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+               title="Ubicación de Grupo Fischer en Ciudad de México">
+             </iframe>
+             ============================================= -->
+        <div class="mapa-placeholder">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="color:var(--acento);opacity:0.6;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>El mapa interactivo se activará cuando pegues el iframe embed de Google Maps.<br>
+             Por ahora, usa el botón "Abrir en Google Maps" de arriba.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
-      <div>
-        <h4>Grupo Fischer</h4>
+      <div class="footer-brand">
+        <p class="footer-logo">GRUPO <span>FISCHER</span></p>
         <p>Renta de flotilla para conductores de plataformas digitales en Ciudad de México.</p>
       </div>
       <div>
         <h4>Navegación</h4>
-        <a href="servicios.html">Servicios</a>
-        <a href="casos-exito.html">Casos de éxito</a>
-        <a href="taller.html">Taller mecánico</a>
-        <a href="contacto.html">Contacto</a>
+        <nav aria-label="Navegación en el footer">
+          <a href="servicios.html">Servicios</a>
+          <a href="casos-exito.html">Casos de éxito</a>
+          <a href="taller.html">Taller mecánico</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
       </div>
       <div>
         <h4>Contacto</h4>
-        <a href="https://wa.me/5210000000000" target="_blank" rel="noopener">WhatsApp: (55) 0000 0000</a>
-        <a href="mailto:contacto@grupofischer.mx">contacto@grupofischer.mx</a>
-        <p>Ciudad de México</p>
+        <div class="footer-contact">
+          <a href="tel:+525530816185"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12 19.79 19.79 0 0 1 1.95 3.35 2 2 0 0 1 3.92 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>55 3081 6185</a>
+          <a href="https://wa.me/525530816185" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a>
+          <a href="mailto:grupo.fischer19@gmail.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>grupo.fischer19@gmail.com</a>
+          <a href="https://maps.app.goo.gl/NrhEzaXPWLWb828k8" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Ver en Google Maps</a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Grupo Fischer</span>
-      <span>Flotilla CDMX</span>
+      <span>© 2026 Grupo Fischer — CDMX</span>
+      <span>Flotilla para Uber y DiDi</span>
     </div>
   </div>
 </footer>
 
-<a class="wsp-flotante" href="https://wa.me/5210000000000" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">🟢</a>
+<a class="wsp-flotante" href="https://wa.me/525530816185" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Grupo Fischer por WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>

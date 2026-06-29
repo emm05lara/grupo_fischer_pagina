@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /assets/js/
+
+# TODO: Reemplaza TU-DOMINIO.com con tu dominio real una vez que lo configures
+Sitemap: https://TU-DOMINIO.com/sitemap.xml

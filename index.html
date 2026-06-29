@@ -1,187 +1,276 @@
 <!DOCTYPE html>
-<html lang="es-MX">
+<html lang="es-MX" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Grupo Fischer — Flotilla para conductores Uber y DiDi en CDMX</title>
-<meta name="description" content="Renta de vehículos para conductores de Uber y DiDi en Ciudad de México. Taller mecánico propio, mantenimiento preventivo y acompañamiento real.">
+<meta name="description" content="Renta de vehículos para conductores de Uber y DiDi en Ciudad de México. Taller mecánico propio, mantenimiento preventivo y acompañamiento real a cada conductor.">
+<!-- Open Graph -->
+<meta property="og:title"       content="Grupo Fischer — Flotilla para conductores Uber y DiDi en CDMX">
+<meta property="og:description" content="Renta de vehículos para conductores de Uber y DiDi en Ciudad de México. Taller propio, soporte 7 días y acompañamiento real.">
+<meta property="og:type"        content="website">
+<meta property="og:locale"      content="es_MX">
+<!-- TODO: Reemplaza TU-DOMINIO.com con tu dominio real una vez que lo configures en Cloudflare -->
+<meta property="og:url"         content="https://TU-DOMINIO.com/">
+<meta property="og:image"       content="https://TU-DOMINIO.com/assets/img/hero/flotilla-grupo-fischer.webp">
+<link rel="canonical"           href="https://TU-DOMINIO.com/">
+<!-- Favicon -->
+<link rel="icon" href="assets/img/logo/favicon.svg" type="image/svg+xml">
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<!-- Aplicar tema antes de pintar para evitar flash -->
+<script>
+  (function(){var t=localStorage.getItem('gf-tema');if(t)document.documentElement.setAttribute('data-theme',t);else if(window.matchMedia('(prefers-color-scheme: light)').matches)document.documentElement.setAttribute('data-theme','light');}());
+</script>
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
+<!-- =============================================
+     DATOS DE CONTACTO — editar aquí si cambian
+     Tel:      55 3081 6185  |  tel:+525530816185
+     WhatsApp: https://wa.me/525530816185
+               (alternativa: https://wa.me/5215530816185)
+     Correo:   grupo.fischer19@gmail.com
+     Maps:     https://maps.app.goo.gl/NrhEzaXPWLWb828k8
+     ============================================= -->
+
+<a class="skip-link" href="#main">Ir al contenido principal</a>
+
 <header class="site-header">
   <div class="wrap">
-    <a href="index.html" class="logo">GRUPO <span>FISCHER</span><small>FLOTILLA CDMX</small></a>
-    <nav class="main-nav">
+    <a href="index.html" class="logo" aria-label="Grupo Fischer — página de inicio">
+      GRUPO <span>FISCHER</span><small>FLOTILLA CDMX</small>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
       <a href="index.html" aria-current="page">Inicio</a>
       <a href="servicios.html">Servicios</a>
       <a href="casos-exito.html">Casos de éxito</a>
       <a href="taller.html">Taller</a>
       <a href="contacto.html">Contacto</a>
     </nav>
-    <div class="nav-cta">
-      <a class="btn-wsp-mini" href="https://wa.me/5210000000000" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+    <div class="header-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar a tema claro" title="Cambiar a tema claro">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a class="btn-wsp-mini" href="https://wa.me/525530816185" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú de navegación">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="folio">FOLIO GF · FLOTILLA ACTIVA EN CDMX</div>
-      <h1>Tu auto para <span class="accent">trabajar</span>,<br>nuestro taller para <span class="accent">respaldarte</span>.</h1>
-      <p class="lead">Rentamos vehículos a conductores de Uber y DiDi en Ciudad de México, con mantenimiento preventivo propio y un equipo que da seguimiento real a cada unidad y a cada conductor.</p>
-      <div class="hero-cta">
-        <a class="btn btn-primario" href="contacto.html">Quiero rentar un auto</a>
-        <a class="btn btn-fantasma" href="servicios.html">Ver servicios</a>
-      </div>
-    </div>
-    <div class="placa-visual">
-      <div class="placa-top">
-        <span>Expediente</span>
-        <span>GF · CDMX</span>
-      </div>
-      <div class="placa-numero">FISCHER</div>
-      <div class="placa-stats">
-        <div><strong>20+</strong><span>Equipo operativo</span></div>
-        <div><strong>1</strong><span>Taller propio</span></div>
-        <div><strong>7</strong><span>Días de soporte</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+<main id="main">
 
-<section class="con-borde">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="folio">QUÉ HACEMOS</div>
-      <h2>Una flotilla pensada para que trabajes, no para que te compliques.</h2>
-      <p>No solo entregamos un auto: damos seguimiento al vehículo, al papeleo y al conductor durante todo el tiempo que trabaja con nosotros.</p>
-    </div>
-    <div class="grid-servicios">
-      <div class="servicio-card">
-        <div class="num">01 · RENTA</div>
-        <h3>Vehículos listos para Uber y DiDi</h3>
-        <p>Unidades dadas de alta en plataforma, con papeles en regla y entrega inmediata para que empieces a generar ingresos.</p>
+  <!-- HERO -->
+  <section class="hero con-borde">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="folio">FLOTILLA ACTIVA EN CDMX</div>
+        <h1>Tu auto para <span class="accent">trabajar</span>,<br>nuestro taller para <span class="accent">respaldarte</span>.</h1>
+        <p class="lead">Rentamos vehículos a conductores de Uber y DiDi en Ciudad de México, con mantenimiento preventivo propio y un equipo que da seguimiento real a cada unidad y a cada conductor.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primario" href="contacto.html">Quiero rentar un auto</a>
+          <a class="btn btn-fantasma" href="servicios.html">Ver servicios</a>
+        </div>
       </div>
-      <div class="servicio-card">
-        <div class="num">02 · TALLER</div>
-        <h3>Mantenimiento preventivo propio</h3>
-        <p>Revisiones programadas, no solo reparaciones cuando algo falla. Menos tiempo parado, más tiempo trabajando.</p>
-      </div>
-      <div class="servicio-card">
-        <div class="num">03 · ACOMPAÑAMIENTO</div>
-        <h3>Seguimiento real al conductor</h3>
-        <p>Supervisión, soporte ante imprevistos (accidentes, siniestros, trámites) y comunicación directa con el equipo de Grupo Fischer.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="alt con-borde">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="folio">CÓMO TRABAJAMOS</div>
-      <h2>De la primera llamada al primer viaje pagado.</h2>
-    </div>
-    <div class="pasos">
-      <div class="paso">
-        <div class="folio-paso">PASO GF-1</div>
-        <h3>Contacto y evaluación</h3>
-        <p>Nos escribes, revisamos tu situación y te explicamos las condiciones de renta.</p>
-      </div>
-      <div class="paso">
-        <div class="folio-paso">PASO GF-2</div>
-        <h3>Revisión y entrega</h3>
-        <p>Firmamos contrato, revisamos el vehículo juntos y te lo entregamos listo para trabajar.</p>
-      </div>
-      <div class="paso">
-        <div class="folio-paso">PASO GF-3</div>
-        <h3>Alta en plataforma</h3>
-        <p>Te apoyamos para que el auto quede correctamente dado de alta en Uber o DiDi.</p>
-      </div>
-      <div class="paso">
-        <div class="folio-paso">PASO GF-4</div>
-        <h3>Soporte continuo</h3>
-        <p>Mantenimiento preventivo, GPS, y un equipo disponible ante cualquier imprevisto en el camino.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="con-borde" style="padding:0;">
-  <div class="banda-cifras">
-    <div><strong>+20</strong><span>Personas en el equipo</span></div>
-    <div><strong>24/7</strong><span>Monitoreo GPS de unidades</span></div>
-    <div><strong>3%</strong><span>Único cargo extra por viajes en efectivo</span></div>
-    <div><strong>1</strong><span>Taller mecánico propio</span></div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <div class="folio">VOCES DE LA FLOTILLA</div>
-      <h2>Conductores que ya trabajan con nosotros.</h2>
-      <p>Esto apenas empieza — aquí vas a encontrar testimonios reales de quienes ya manejan con Grupo Fischer.</p>
-    </div>
-    <div class="grid-expedientes">
-      <div class="expediente">
-        <div class="foto">FOTO DEL CONDUCTOR<br>(próximamente)</div>
-        <div class="datos">
-          <div class="ficha-top">
-            <span class="nombre">Conductor GF</span>
-            <span class="meta">Uber · CDMX</span>
+      <div class="placa-visual">
+        <div class="placa-top">
+          <span>Grupo Fischer</span>
+          <span>GF · CDMX</span>
+        </div>
+        <div class="placa-numero">FISCHER</div>
+        <div class="placa-stats">
+          <div>
+            <strong>7/7</strong>
+            <span>Soporte activo</span>
           </div>
-          <blockquote>"Aquí van a poder leer testimonios reales de nuestros conductores."</blockquote>
+          <div>
+            <strong>1</strong>
+            <span>Taller propio</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Monitoreo GPS</span>
+          </div>
         </div>
       </div>
     </div>
-    <div style="text-align:center; margin-top:36px;">
-      <a class="btn btn-fantasma" href="casos-exito.html">Ver todos los casos de éxito</a>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="cta-final">
-  <div class="wrap">
-    <h2>¿Listo para manejar con nosotros?</h2>
-    <p>Escríbenos por WhatsApp y un asesor de Grupo Fischer te explica las condiciones de renta el mismo día.</p>
-    <a class="btn btn-primario" href="https://wa.me/5210000000000" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-  </div>
-</section>
+  <!-- QUÉ HACEMOS -->
+  <section class="seccion con-borde">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="folio">QUÉ HACEMOS</div>
+        <h2>Una flotilla pensada para que trabajes, no para que te compliques.</h2>
+        <p>No solo entregamos un auto: damos seguimiento al vehículo, al papeleo y al conductor durante todo el tiempo que trabaja con nosotros.</p>
+      </div>
+      <div class="grid-servicios">
+        <div class="servicio-card">
+          <div class="num">01 · RENTA</div>
+          <h3>Vehículos listos para Uber y DiDi</h3>
+          <p>Unidades dadas de alta en plataforma, con papeles en regla y entrega rápida para que empieces a generar ingresos.</p>
+        </div>
+        <div class="servicio-card">
+          <div class="num">02 · TALLER</div>
+          <h3>Mantenimiento preventivo propio</h3>
+          <p>Revisiones programadas, no solo reparaciones cuando algo falla. Menos tiempo parado, más tiempo trabajando.</p>
+        </div>
+        <div class="servicio-card">
+          <div class="num">03 · ACOMPAÑAMIENTO</div>
+          <h3>Seguimiento real al conductor</h3>
+          <p>Supervisión, soporte ante imprevistos (accidentes, siniestros, trámites) y comunicación directa con el equipo de Grupo Fischer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO TRABAJAMOS -->
+  <section class="seccion alt con-borde">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="folio">CÓMO TRABAJAMOS</div>
+        <h2>De la primera llamada al primer viaje pagado.</h2>
+      </div>
+      <div class="pasos">
+        <div class="paso">
+          <div class="paso-num">PASO GF-1</div>
+          <h3>Contacto y evaluación</h3>
+          <p>Nos escribes, revisamos tu situación y te explicamos las condiciones de renta.</p>
+        </div>
+        <div class="paso">
+          <div class="paso-num">PASO GF-2</div>
+          <h3>Revisión y entrega</h3>
+          <p>Firmamos contrato, revisamos el vehículo juntos y te lo entregamos listo para trabajar.</p>
+        </div>
+        <div class="paso">
+          <div class="paso-num">PASO GF-3</div>
+          <h3>Alta en plataforma</h3>
+          <p>Te apoyamos para que el auto quede correctamente dado de alta en Uber o DiDi.</p>
+        </div>
+        <div class="paso">
+          <div class="paso-num">PASO GF-4</div>
+          <h3>Soporte continuo</h3>
+          <p>Mantenimiento preventivo, GPS, y un equipo disponible ante cualquier imprevisto en el camino.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CIFRAS -->
+  <section class="con-borde" style="padding:0;">
+    <div class="banda-cifras">
+      <div><strong>+20</strong><span>Personas en el equipo</span></div>
+      <div><strong>24/7</strong><span>Monitoreo GPS de unidades</span></div>
+      <div><strong>3%</strong><span>Único cargo por viajes en efectivo</span></div>
+      <div><strong>1</strong><span>Taller mecánico propio</span></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="seccion con-borde">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="folio">VOCES DE LA FLOTILLA</div>
+        <h2>Conductores que ya trabajan con nosotros.</h2>
+        <p>Próximamente encontrarás aquí los testimonios reales de quienes manejan con Grupo Fischer.</p>
+      </div>
+      <div class="grid-expedientes">
+        <!-- TODO: Reemplazar con testimonios reales cuando los tengas.
+             Coloca fotos en: assets/img/casos/conductor-1.webp, conductor-2.webp, etc.
+             Sustituye el div.img-ph por: <img src="assets/img/casos/conductor-1.webp" alt="Conductor GF — [nombre]" loading="lazy">  -->
+        <div class="expediente">
+          <div class="img-ph" role="img" aria-label="Foto del conductor — pendiente">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>conductor-1.webp<br>assets/img/casos/</span>
+          </div>
+          <div class="datos">
+            <div class="ficha-top">
+              <span class="nombre">Conductor GF</span>
+              <span class="meta">Uber · CDMX</span>
+            </div>
+            <blockquote>"Aquí va a aparecer el testimonio real del primer conductor. Comparte tu experiencia desde la página de Casos de éxito."</blockquote>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:32px;">
+        <a class="btn btn-fantasma" href="casos-exito.html">Ver todos los casos de éxito</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <div class="wrap">
+      <h2>¿Listo para manejar con nosotros?</h2>
+      <p>Escríbenos por WhatsApp y un asesor de Grupo Fischer te explica las condiciones de renta el mismo día.</p>
+      <div class="cta-btns">
+        <a class="btn btn-wsp" href="https://wa.me/525530816185" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escribir por WhatsApp
+        </a>
+        <a class="btn btn-fantasma" href="contacto.html">Formulario de contacto</a>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-grid">
-      <div>
-        <h4>Grupo Fischer</h4>
+      <div class="footer-brand">
+        <p class="footer-logo">GRUPO <span>FISCHER</span></p>
         <p>Renta de flotilla para conductores de plataformas digitales en Ciudad de México.</p>
       </div>
       <div>
         <h4>Navegación</h4>
-        <a href="servicios.html">Servicios</a>
-        <a href="casos-exito.html">Casos de éxito</a>
-        <a href="taller.html">Taller mecánico</a>
-        <a href="contacto.html">Contacto</a>
+        <nav aria-label="Navegación en el footer">
+          <a href="servicios.html">Servicios</a>
+          <a href="casos-exito.html">Casos de éxito</a>
+          <a href="taller.html">Taller mecánico</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
       </div>
       <div>
         <h4>Contacto</h4>
-        <a href="https://wa.me/5210000000000" target="_blank" rel="noopener">WhatsApp: (55) 0000 0000</a>
-        <a href="mailto:contacto@grupofischer.mx">contacto@grupofischer.mx</a>
-        <p>Ciudad de México</p>
+        <div class="footer-contact">
+          <a href="tel:+525530816185">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12 19.79 19.79 0 0 1 1.95 3.35 2 2 0 0 1 3.92 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            55 3081 6185
+          </a>
+          <a href="https://wa.me/525530816185" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="mailto:grupo.fischer19@gmail.com">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            grupo.fischer19@gmail.com
+          </a>
+          <a href="https://maps.app.goo.gl/NrhEzaXPWLWb828k8" target="_blank" rel="noopener noreferrer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Ver en Google Maps
+          </a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Grupo Fischer</span>
-      <span>Flotilla CDMX</span>
+      <span>© 2026 Grupo Fischer — CDMX</span>
+      <span>Flotilla para Uber y DiDi</span>
     </div>
   </div>
 </footer>
 
-<a class="wsp-flotante" href="https://wa.me/5210000000000" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">🟢</a>
+<!-- Botón flotante WhatsApp -->
+<a class="wsp-flotante" href="https://wa.me/525530816185" target="_blank" rel="noopener noreferrer" aria-label="Contactar a Grupo Fischer por WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>
