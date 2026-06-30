@@ -271,14 +271,20 @@ button { cursor: pointer; font-family: inherit; }
     top: 74px;
     left: 0;
     right: 0;
-    bottom: 0;
+    /* Altura explícita: el header tiene backdrop-filter y actúa como bloque
+       contenedor de los hijos fixed, por lo que `bottom:0` colapsaba la altura
+       a 0. Usamos 100dvh (con fallback 100vh) menos la altura del header. */
+    height: calc(100vh - 74px);
+    height: calc(100dvh - 74px);
     background: var(--bg-1);
     border-top: 1px solid var(--borde);
     flex-direction: column;
     gap: 0;
     padding: 12px 28px 28px;
     overflow-y: auto;
-    z-index: 40;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    z-index: 45;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-6px);
@@ -288,6 +294,14 @@ button { cursor: pointer; font-family: inherit; }
     opacity: 1;
     visibility: visible;
     transform: none;
+  }
+
+  /* Ocultar el FAB de WhatsApp mientras el menú está abierto para que no
+     se encime sobre las opciones de navegación. */
+  body.nav-abierta .wsp-flotante {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
   .main-nav a {
     font-size: 18px;

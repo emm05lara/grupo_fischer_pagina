@@ -43,12 +43,14 @@
 
     function cerrarNav() {
       nav.classList.remove('nav-open');
+      document.body.classList.remove('nav-abierta');
       toggle.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
     }
 
     function abrirNav() {
       nav.classList.add('nav-open');
+      document.body.classList.add('nav-abierta');
       toggle.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
     }
@@ -69,6 +71,13 @@
         cerrarNav();
         toggle.focus();
       }
+    });
+
+    /* Cerrar al hacer clic fuera del menú (sin contar el botón ni el menú) */
+    document.addEventListener('click', function (e) {
+      if (!nav.classList.contains('nav-open')) return;
+      if (nav.contains(e.target) || toggle.contains(e.target)) return;
+      cerrarNav();
     });
 
     /* Cerrar si se redimensiona a desktop */
